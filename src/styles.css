@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@300&display=swap");
+
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-handlee: "Handlee", cursive;
+  --color-wall: #150f13;
+  --color-btns: #f0ae96;
+  --color-font: #ffe3df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-wall);
+}
