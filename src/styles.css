@@ -16,4 +16,5 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--color-wall);
+  color: var(--color-font);
 }
