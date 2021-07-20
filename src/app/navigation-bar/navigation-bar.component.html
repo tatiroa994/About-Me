@@ -1,15 +1,14 @@
 <div class="container-principal">
-  <a class="nav-item" href="#home">
+  <a class="nav-item" [ngClass]="{ active: isHome }" href="#home">
     <span class="text">Inicio</span>
-    <img src="../../assets/home-icon.png"/>
+    <img src="../../assets/home-icon.png" />
   </a>
-  <a href="#about-me" class="nav-item">
+  <a href="#about-me" class="nav-item" [ngClass]="{ active: isAboutMe }">
     <span class="text">Acerca de mi</span>
     <img src="../../assets/profile-icon.png" />
   </a>
-  <a href="#proyects" class="nav-item">
+  <a href="#projects" class="nav-item" [ngClass]="{ active: isProjects }">
     <span class="text">Proyectos</span>
-    <img src="../../assets/proyects-icon.png"/>
-    </a
-  >
+    <img src="../../assets/proyects-icon.png" />
+  </a>
 </div>

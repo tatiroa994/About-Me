@@ -25,6 +25,10 @@
   transform: translateX(0px);
 }
 
+.active{
+  background-color: var(--color-btns);
+}
+
 @media screen and (max-width: 580px) {
   .container-principal {
     flex-direction: row;

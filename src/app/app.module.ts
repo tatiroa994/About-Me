@@ -9,6 +9,7 @@ import { AllProjectsComponent } from './all-projects/all-projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectComponent } from './project/project.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     ProjectComponent,
     NavigationBarComponent,
   ],
-  imports: [BrowserModule, RouterModule],
+  imports: [BrowserModule, RouterModule ,CommonModule],
   providers: [],
   bootstrap: [AppComponent],
   exports:[RouterModule]

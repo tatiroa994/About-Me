@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 @Component({
   selector: 'app-navigation-bar',
@@ -7,19 +6,30 @@ import { Location } from '@angular/common';
   styleUrls: ['./navigation-bar.component.css'],
 })
 export class NavigationBarComponent implements OnInit {
-  currentPath!: string;
-  isCurrentPath!: boolean;
+  isHome!: boolean;
+  isAboutMe!: boolean;
+  isProjects!: boolean;
 
   constructor(private location: Location) {}
 
   ngOnInit(): void {
-    this.paintCurrentItem();
+    this.validatePaths(this.location.path(true));
+    this.location.subscribe(({ url }) => this.validatePaths(url));
   }
 
-  paintCurrentItem() {
-    this.currentPath = this.location.path(true);
-    this.location.subscribe(({ url }) => {
-      console.log(url);
-    });
+  validatePaths(url: string | undefined): void {
+    if (url === '#home') {
+      this.isAboutMe = false;
+      this.isHome = true;
+      this.isProjects = false;
+    } else if (url === '#about-me') {
+      this.isAboutMe = true;
+      this.isHome = false;
+      this.isProjects = false;
+    } else if (url === '#projects') {
+      this.isAboutMe = false;
+      this.isHome = false;
+      this.isProjects = true;
+    }
   }
 }
