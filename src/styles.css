@@ -5,11 +5,17 @@
   --font-handlee: "Handlee", cursive;
   --color-wall: #150f13;
   --color-btns: #f0ae96;
-  --color-font: #ffe3df;
+  --color-font: #F3DBCB;
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

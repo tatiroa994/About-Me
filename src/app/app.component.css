@@ -1,0 +1,39 @@
+.container-nav {
+  width: 10%;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  height: auto;
+}
+
+.container-contac-me {
+  width: 10%;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  height: auto;
+  border: springgreen solid 1px;
+}
+.container-principal {
+  width: 100%;
+  padding: 0 0 0 10%;
+}
+
+@media screen and (max-width: 580px) {
+  .container-nav {
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    border: yellow solid 1px;
+  }
+  .container-contac-me {
+    width: 100%;
+    bottom: 0px;
+    height: 40px;
+    border: springgreen solid 1px;
+  }
+  .container-principal {
+    width: 100%;
+    padding: 40px 0 ;
+  }
+}
