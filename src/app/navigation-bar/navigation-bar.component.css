@@ -1,0 +1,41 @@
+.container-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.home,
+.about-me,
+.projects {
+  background-color: var(--color-font);
+  font-family: var(--font-handlee);
+  border-radius: 0 20px 20px 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  width: 150px;
+  text-decoration-line: none;
+  color: var(--color-wall);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 580px) {
+  .container-principal {
+    flex-direction: row;
+  }
+
+  .text{
+    display: none;
+  }
+
+  .home,
+.about-me,
+.projects {
+  border-radius: 0;
+  justify-content: center;
+}
+}

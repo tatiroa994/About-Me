@@ -23,4 +23,12 @@ body {
   padding: 0;
   background-color: var(--color-wall);
   color: var(--color-font);
+  font-size: 32px;
+}
+
+
+@media screen and (max-width: 580px) {
+body{
+  font-size: 20px;
+}
 }

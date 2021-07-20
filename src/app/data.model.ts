@@ -1,5 +1,5 @@
 export interface DataProfile {
-  aboutme: string;
+  'about me': string;
   skills: Skill[];
   phone: string;
   gitHub: string;
@@ -7,14 +7,12 @@ export interface DataProfile {
   email: string;
   cv: string;
 }
-
 interface Skill {
   skill: string;
   urlImg: string;
 }
-
-export interface DataProyects {
-  proyect: string;
+export interface DataProjects {
+  project: string;
   skill: string[];
   'repo-link': string;
   'demo-link': string;

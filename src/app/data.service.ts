@@ -1,23 +1,24 @@
 import { Injectable } from '@angular/core';
-import { profile, proyects } from '../data/data';
-import { DataProfile, DataProyects } from './data.model';
+import { profile, projects } from '../data/data';
+import { DataProfile,  DataProjects } from './data.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  dataProfile: DataProfile;
-  dataProyects: DataProyects[];
+  private dataProfile: DataProfile;
+  private dataProjects: DataProjects[];
+
   constructor() {
     this.dataProfile = profile;
-    this.dataProyects = proyects;
+    this.dataProjects = projects;
   }
 
   getDataProfile(){
-    return this.dataProfile
+    return this.dataProfile;
   }
 
-  getDataProyects(){
-    return this.dataProyects
+  getDataProjects(){
+    return this.dataProjects; 
   }
 }
