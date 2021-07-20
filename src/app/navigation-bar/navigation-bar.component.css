@@ -3,9 +3,7 @@
   flex-direction: column;
 }
 
-.home,
-.about-me,
-.projects {
+.nav-item {
   background-color: var(--color-font);
   font-family: var(--font-handlee);
   border-radius: 0 20px 20px 0;
@@ -19,23 +17,26 @@
   color: var(--color-wall);
   font-size: 1.1rem;
   font-weight: bold;
+  transform: translateX(-105px);
+  transition: transform 0.4s ease-out;
 }
 
-
+.nav-item:hover {
+  transform: translateX(0px);
+}
 
 @media screen and (max-width: 580px) {
   .container-principal {
     flex-direction: row;
   }
 
-  .text{
+  .text {
     display: none;
   }
 
-  .home,
-.about-me,
-.projects {
-  border-radius: 0;
-  justify-content: center;
-}
+  .nav-item {
+    border-radius: 0;
+    justify-content: center;
+    transform: translateX(0px);
+  }
 }

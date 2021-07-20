@@ -6,7 +6,7 @@ import { DataProfile,  DataProjects } from './data.model';
   providedIn: 'root',
 })
 export class DataService {
-  private dataProfile: DataProfile;
+  private readonly dataProfile: DataProfile;
   private dataProjects: DataProjects[];
 
   constructor() {

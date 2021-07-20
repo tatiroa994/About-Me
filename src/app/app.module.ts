@@ -23,5 +23,6 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
   imports: [BrowserModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent],
+  exports:[RouterModule]
 })
 export class AppModule {}
