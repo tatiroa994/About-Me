@@ -31,11 +31,10 @@ export const profile = {
       urlImg: '../../assets/firebase-icon.png',
     },
   ],
-  phone: '3193760856',
   gitHub: 'https://github.com/tatiroa994',
   linkedin: 'https://www.linkedin.com/in/tatiroa994/',
   email: 'tatico994@gmail.com',
-  cv: 'pendent',
+  cv: 'https://drive.google.com/file/d/1VEWnhIBACZfDC94_upCvXW6oAhqnkHJC/view?usp=sharing',
 };
 
 export const projects = [

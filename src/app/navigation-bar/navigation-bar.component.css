@@ -42,5 +42,6 @@
     border-radius: 0;
     justify-content: center;
     transform: translateX(0px);
+    margin-bottom: 0;
   }
 }

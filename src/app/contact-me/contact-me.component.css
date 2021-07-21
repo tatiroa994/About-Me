@@ -1,0 +1,38 @@
+.container-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-bottom: 0.5rem;
+}
+
+.item img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.item:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1.5px, 1.5px) rotate(0deg);
+  }
+  50% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

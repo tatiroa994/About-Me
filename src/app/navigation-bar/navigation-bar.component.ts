@@ -18,7 +18,7 @@ export class NavigationBarComponent implements OnInit {
   }
 
   validatePaths(url: string | undefined): void {
-    if (url === '#home') {
+    if (url === '#home'|| url === '') {
       this.isAboutMe = false;
       this.isHome = true;
       this.isProjects = false;

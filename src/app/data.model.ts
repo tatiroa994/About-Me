@@ -1,7 +1,6 @@
 export interface DataProfile {
   'about me': string;
   skills: Skill[];
-  phone: string;
   gitHub: string;
   linkedin: string;
   email: string;

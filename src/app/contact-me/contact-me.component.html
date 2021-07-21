@@ -1,1 +1,14 @@
-<p>contac-me works!</p>
+<div class="container-principal">
+  <div class="item" #gitHub>
+    <img src="../../assets/github-icon.png" (click)="redirectTo('gitHub')" />
+  </div>
+  <div class="item" #linkedin>
+    <img src="../../assets/linkedin-icon.png" (click)="redirectTo('linkedin')"/>
+  </div>
+  <a class="item" #email href="mailto:tatico994@gmail.com">
+    <img src="../../assets/email-icon.png" />
+  </a>
+  <div class="item" cv>
+    <img src="../../assets/CV-icon.png" (click)="redirectTo('cv')"/>
+  </div>
+</div>
