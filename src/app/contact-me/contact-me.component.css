@@ -1,6 +1,8 @@
 .container-principal {
   display: flex;
   flex-direction: column;
+  background-color: var(--color-wall);
+  
 }
 
 .item {
@@ -34,5 +36,6 @@
   .container-principal {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0.8rem;
   }
 }

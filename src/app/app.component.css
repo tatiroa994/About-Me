@@ -4,19 +4,22 @@
   top: 10px;
   left: 0;
   height: auto;
+  z-index: 100;
 }
 
 .container-contact-me {
   width: 8%;
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   right: 0;
   height: auto;
+  z-index: 100;
 }
 
 .container-principal {
   width: 100%;
   padding: 0 8% 0 6%;
+  z-index: 1;
 }
 
 @media screen and (max-width: 580px) {
@@ -27,7 +30,7 @@
   }
   .container-contact-me {
     width: 100%;
-    bottom: 0px;
+    bottom: 12px;
     height: 50px;
   }
   .container-principal {

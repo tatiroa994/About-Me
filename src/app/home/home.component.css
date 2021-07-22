@@ -1,5 +1,49 @@
-p{
+.container-principal {
   width: 100%;
   min-height: 100vh;
-  border: blanchedalmond solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-photo {
+  position: relative;
+}
+
+.photo {
+  width: 300px;
+  border-radius: 100%;
+  border: var(--color-font) solid 10px;
+}
+
+.icon-home {
+  position: absolute;
+  bottom: 10px;
+  right: 130px;
+  width: 50px;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.name img {
+  width: 50%;
+  min-width: 320px;
+}
+
+.text{
+  color: var(--color-btns);
+  font-family: var(--font-roboto);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 580px) {
+  .photo img {
+    width: 150px;
+    border: var(--color-font) solid 5px;
+  }
 }

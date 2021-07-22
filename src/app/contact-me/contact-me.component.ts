@@ -23,26 +23,17 @@ export class ContactMeComponent implements OnInit {
   }
 
   redirectTo(option: string) {
-    // const options = {
-    //   gitHub: this.gitHub,
-    //   linkedin: this.linkedin,
-    //   cv: this.cv,
-    // };
-    // const url = options[option];
+    type Option = {
+      [property: string]: string;
+    };
 
-    let url = '';
+    const options: Option = {
+      gitHub: this.gitHub,
+      linkedin: this.linkedin,
+      cv: this.cv,
+    };
+    const url = options[option];
 
-    switch (option) {
-      case 'gitHub':
-        url = this.gitHub;
-        break;
-      case 'linkedin':
-        url = this.linkedin;
-        break;
-      case 'cv':
-        url = this.cv;
-        break;
-    }
     window.open(url);
   }
 }
