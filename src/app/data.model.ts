@@ -6,7 +6,7 @@ export interface DataProfile {
   email: string;
   cv: string;
 }
-interface Skill {
+export interface Skill {
   skill: string;
   urlImg: string;
 }

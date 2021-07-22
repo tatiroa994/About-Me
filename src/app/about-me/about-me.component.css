@@ -1,5 +1,50 @@
-p{
+.container-principal {
   width: 100%;
   min-height: 100vh;
-  border: green solid 1px;
+  padding: 1rem;
+}
+
+.container-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-about-me {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: var(--font-roboto);
+  margin: 0;
+}
+
+.title {
+  font-family: var(--font-title);
+  color: var(--color-btns);
+  text-align: center;
+  font-weight: 100;
+  font-size: 5rem;
+  margin: 1rem 0 0 0;
+}
+
+.container-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.item-skill {
+  margin: 0 0.5rem 0.5rem 0;
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (max-width: 580px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .text-about-me {
+    font-size: 1.1rem;
+  }
 }

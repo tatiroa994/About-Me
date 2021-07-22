@@ -1,1 +1,13 @@
-<p>about-me works!</p>
+<section class="container-principal">
+  <h1 class="title">Acerca de mi</h1>
+  <p class="text-about-me">{{ aboutMe }}</p>
+  <h1 class="title">Habilidades tecnicas</h1>
+  <div class="container-skills">
+    <img
+      *ngFor="let skill of urlSkills"
+      [src]="skill.urlImg"
+      class="item-skill"
+    />
+  </div>
+</section>
+
