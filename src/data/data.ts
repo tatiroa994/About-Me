@@ -34,7 +34,7 @@ export const profile = {
   gitHub: 'https://github.com/tatiroa994',
   linkedin: 'https://www.linkedin.com/in/tatiroa994/',
   email: 'tatico994@gmail.com',
-  cv: 'https://drive.google.com/file/d/1VEWnhIBACZfDC94_upCvXW6oAhqnkHJC/view?usp=sharing',
+  cv: 'https://drive.google.com/file/d/1I-00IDrO5AwoCs2Q7beQjbCV49-nR6OY/view?usp=sharing',
 };
 
 export const projects = [

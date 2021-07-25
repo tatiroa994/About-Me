@@ -20,10 +20,10 @@ import { CommonModule } from '@angular/common';
     ContactMeComponent,
     ProjectComponent,
     NavigationBarComponent,
-  ],
+    ],
   imports: [BrowserModule, RouterModule ,CommonModule],
   providers: [],
   bootstrap: [AppComponent],
-  exports:[RouterModule]
+  exports:[RouterModule,]
 })
 export class AppModule {}

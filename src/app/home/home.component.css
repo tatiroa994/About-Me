@@ -39,6 +39,7 @@
   color: var(--color-btns);
   font-family: var(--font-roboto);
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 580px) {

@@ -19,6 +19,7 @@
   font-weight: bold;
   transform: translateX(-105px);
   transition: transform 0.4s ease-out;
+  
 }
 
 .nav-item:hover {
@@ -43,5 +44,6 @@
     justify-content: center;
     transform: translateX(0px);
     margin-bottom: 0;
+    flex: 1;
   }
 }
