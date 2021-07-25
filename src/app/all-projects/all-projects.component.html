@@ -1,1 +1,10 @@
-<p>all-proyects works!</p>
+<section class="container-principal">
+  <h1 class="title">Proyectos</h1>
+  <div class="container-projects">
+    <app-project
+      *ngFor="let item of allProjects"
+      [project]="item"
+    ></app-project>
+  </div>
+  <a href="https://github.com/tatiroa994?tab=repositories" target="_blank" class="see-more">Ver mas...</a>
+</section>

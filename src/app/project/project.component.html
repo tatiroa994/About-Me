@@ -1,1 +1,15 @@
-<p>proyect works!</p>
+<div class="container-principal">
+  <img [src]="project.img" />
+  <div class="container-secondary">
+    <div class="container-links">
+      <a [href]="project['demo-link']" target="_blank">Web</a>
+      <a [href]="project['repo-link']" target="_blank">Repositorio</a>
+    </div>
+    <span class="name-project">{{project.project}}</span>
+    <div class="container-skill">
+      <span class="skill">Angular</span>
+      <span class="skill">Css</span>
+      <span class="skill">Typescript</span>
+    </div>
+  </div>
+</div>

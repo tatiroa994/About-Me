@@ -1,5 +1,33 @@
-p{
+.container-principal {
   width: 100%;
   min-height: 100vh;
-  border: salmon solid 1px;
+}
+
+.title {
+  font-family: var(--font-title);
+  color: var(--color-btns);
+  text-align: center;
+  font-weight: 100;
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+.container-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 85%;
+  grid-gap: 1.2rem;
+  margin: auto;
+  justify-items: center;
+}
+
+.see-more {
+  width: 100%;
+  display: inline-block;
+  color: var(--color-font);
+  font-family: var(--font-title);
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 1.5rem;
 }
