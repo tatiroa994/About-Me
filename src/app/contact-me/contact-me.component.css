@@ -18,7 +18,6 @@
 
 .item:hover {
   animation: shake 0.5s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes shake {
