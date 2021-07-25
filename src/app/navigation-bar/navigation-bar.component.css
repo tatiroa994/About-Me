@@ -9,24 +9,30 @@
   border-radius: 0 20px 20px 0;
   margin-bottom: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  text-decoration-line: none;
   padding: 0.5rem;
   width: 150px;
-  text-decoration-line: none;
+  transform: translateX(-105px);
+  transition: transform 0.4s ease-out;
+}
+
+.text {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  width: 100px;
+  text-align: center;  
   color: var(--color-wall);
   font-size: 1.1rem;
   font-weight: bold;
-  transform: translateX(-105px);
-  transition: transform 0.4s ease-out;
-  
 }
 
 .nav-item:hover {
   transform: translateX(0px);
 }
 
-.active{
+.active {
   background-color: var(--color-btns);
 }
 
