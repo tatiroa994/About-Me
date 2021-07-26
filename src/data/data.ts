@@ -62,8 +62,8 @@ export const projects = [
   {
     project: 'Secretos',
     skill: ['JavaScript', 'HTML', 'CSS'],
-    'repo-link': 'https://github.com/tatiroa994/BOG002-md-links',
-    'demo-link': 'https://github.com/tatiroa994/BOG002-md-links/packages/809641',
+    'repo-link': 'https://github.com/tatiroa994/BOG002-cipher',
+    'demo-link': 'https://tatiroa994.github.io/BOG002-cipher/',
     img: '../../assets/secrets-icon.png',
   },
 ];
