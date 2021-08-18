@@ -7,9 +7,7 @@
     </div>
     <span class="name-project">{{project.project}}</span>
     <div class="container-skill">
-      <span class="skill">Angular</span>
-      <span class="skill">Css</span>
-      <span class="skill">Typescript</span>
+      <span *ngFor="let item of project.skill" class="skill">{{item}}</span>      
     </div>
   </div>
 </div>

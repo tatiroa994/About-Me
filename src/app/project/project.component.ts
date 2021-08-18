@@ -8,7 +8,9 @@ import { DataProjects } from '../data.model';
 })
 export class ProjectComponent implements OnInit {
 @Input() project!: DataProjects
-  constructor() { }
+  constructor() {     
+    
+  }
 
   ngOnInit(): void {
   }
